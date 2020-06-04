@@ -50,7 +50,7 @@ body {
     margin-left: 10px;
 }
 .fundo1{
-    background-image: url(../imagens/fundo1.jpg);
+    background-image: url(fundo1.jpg);
     width: 100%;
     display: flex;
     background-size:cover;
@@ -111,7 +111,7 @@ body {
     border-radius: 10px;
 }
 .fundo_motivos{
-    background-image: url(../imagens/fundo_motivos.jpg);
+    background-image: url(fundo_motivos.jpg);
     /* width: 100%; */
     display: flex;
     background-size: cover;
