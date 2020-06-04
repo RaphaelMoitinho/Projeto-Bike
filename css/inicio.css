@@ -1,0 +1,149 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho {
+    background-color: #FFD700;
+    width: 100%;
+    border-bottom:#808080 15px solid;
+  }
+.container {
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+}
+.container h1{
+    margin-top: 25px;
+    font-size: 40px;
+    font-family: 'Sen', sans-serif;
+}
+.container img{
+    margin-left: 59px;
+}
+.menu{
+    margin-top: 25px;
+    margin-left: 300px;
+}
+.menu a{
+    text-decoration: none;
+    padding: 10px;
+    height: 50px;
+    color: black;
+    background-color: #F39C12;
+    border: solid;
+    border-radius: 10px;
+    margin: 15px;
+}
+#inicio{
+    color: #808080;
+}
+.menu a:hover{
+    color: #808080;
+    
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+.fundo1{
+    background-image: url(../imagens/fundo1.jpg);
+    width: 100%;
+    display: flex;
+    background-size:cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+}
+.apresentacao{
+    width: 100%;
+}
+.passeios_apresentacao{
+    align-items: center;
+}
+.passeios_apresentacao img{
+    width: 300px;
+    height: 180px;
+    color:  #F39C12;
+    border: solid;
+    border-radius: 10px;
+    margin: 55px;
+
+}
+.passeios_apresentacao img:hover{
+    color: #808080
+}
+#p1{
+    font-family: 'Monoton', cursive;
+    color: #F39C12;
+    font-size: 61px;
+    text-align: center;
+}
+#p2{
+    font-family: 'Special Elite', cursive;
+    color: #E74C3C;
+    font-size: 60px;
+    text-align: center;
+}
+.cadastro{
+    background-color: #FFD700;
+    width: 100%;
+    height: 90px;
+    border-bottom:#808080 15px solid;
+}
+.cadastro h1{
+    float: left;
+    padding: 26px;
+    margin: 0px 160px;
+    font-family: 'Sen', sans-serif;
+}
+.cadastro input{
+    padding: 10px;
+    background-color: #F39C12;
+    border-radius: 10px;
+}
+.cadastro button{
+    padding: 10px;
+    margin-top: 26px;
+    background-color: #F39C12;
+    border-radius: 10px;
+}
+.fundo_motivos{
+    background-image: url(../imagens/fundo_motivos.jpg);
+    /* width: 100%; */
+    display: flex;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-position: center;*/
+    
+}
+.motivos{
+    background-color: rgba(143, 141, 141, 0.726);
+    padding: 21px;
+    border-radius: 52px;
+    margin: 56px 135px;
+    font-family: 'Sen', sans-serif;
+}
+.motivos h2{
+    text-align: center;
+    background-color: #FFD700;
+    border-radius: 52px;
+}
+.rodape{
+    background-color: #808080;
+    text-align: center;
+    height: 28px;
+}
+.rodape a{
+    text-decoration: none;
+    background-color: #F39C12;
+    border-radius: 10px;
+    padding: 3px;
+    color: black;
+    border: solid;
+}
+.rodape a:hover{
+    color: #808080;
+}
