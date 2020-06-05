@@ -1,0 +1,39 @@
+#passeios{
+    color: #808080;
+}
+#patrocinio{
+    float: right;
+    width: 35%;
+    color: black;
+    border: solid;
+    border-radius: 10px;
+    margin-left: 60%;
+    margin-top: 2%;
+    position: fixed;
+}
+.roteiros img{
+    width: 30%;
+    color: #F39C12;
+    border: solid;
+    border-radius: 10px;
+    margin: 1%;
+}
+.roteiros img:hover{
+    color: #808080
+}
+.roteiros div{
+    margin-left: 10%;
+}
+.roteiros h3{
+   
+}
+.roteiros a{
+    text-decoration: none;
+    color: black;
+}
+.fundo2{
+    background-image: url(../imagens/fundo_passeios.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -19px;
+}

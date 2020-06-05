@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Projeto PI - Socio Emocional</title>
-    <link rel="stylesheet" href="inicio.css">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/inicio.css">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -15,18 +16,19 @@
         <!--
       Cabeçalho
     -->
-    <div class="cabecalho">
-        <div class="container">
-          <img style="width: 100px;" src="bike.png"><h1>Um estilo de vida!</h1>
+    
+        <div class="cabecalho">
+          <img src="imagens/bike.png">
+          <h1>Um estilo de vida!</h1>
           <div class="menu">
             <ul>
-              <li><a id="inicio" href="#">Inicio</a></li>
-              <li><a id="passeios" href="#">Passeios</a></li>
+              <li><a id="inicio" href="index.html">Inicio</a></li>
+              <li><a id="passeios" href="paginas/passeios.html">Passeios</a></li>
               <li><a id="manutencao" href="#">Manutenção em dia</a></li>
             </ul>
           </div>
         </div>
-      </div>
+    
     
     <!--
       Fim do Cabeçalho
@@ -49,9 +51,9 @@
           Passeios da apresentação
           -->
           <ul class="passeios_apresentacao">
-            <a href="#"><img class="passseio1" src="passeio1.jpg"></a>
-            <a href="#"><img class="passseio2" src="passeio2.jpeg"></a>
-            <a href="#"><img class="passseio3" src="passeio3.jpg"></a>
+            <a href="#"><img class="passseio1" src="imagens/passeio1.jpg"></a>
+            <a href="#"><img class="passseio2" src="imagens/passeio2.jpeg"></a>
+            <a href="#"><img class="passseio3" src="imagens/passeio3.jpg"></a>
           </ul>
         
           <!--
@@ -171,6 +173,13 @@
       nome: nome_cadastro.value,
       telefone: telefone_cadastro.value
     };
+    if (dados_cadastrais.nome == ''){
+      alert('Preencha os campos corretamante')
+    }else 
+    if(dados_cadastrais.telefone == ''){
+      alert('Preencha os campos corretamante')
+    }else {
     alert(`Olá ${dados_cadastrais.nome}, seja bem vindo! Iremos estar enviando novidades para o numero ${dados_cadastrais.telefone}, até já!`)
+    }
   }
 </script>
