@@ -11,6 +11,7 @@
 }
 .apresentacao{
     width: 100%;
+    margin-top: 5%;
 }
 .passeios_apresentacao{
     align-items: center;
@@ -22,7 +23,16 @@
     border: solid;
     border-radius: 10px;
     margin: 4%;
-
+    margin-left: 3%;
+}
+.passeios_apresentacao iframe{
+    width: 306px;
+    height: 190px;
+    color: #F39C12;
+    border: solid;
+    border-radius: 10px;
+    margin: 4%;
+    margin-left: 3%;
 }
 .passeios_apresentacao img:hover{
     color: #808080

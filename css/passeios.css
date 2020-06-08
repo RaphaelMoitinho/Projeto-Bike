@@ -4,36 +4,65 @@
 #patrocinio{
     float: right;
     width: 35%;
+    height: 72%;
     color: black;
     border: solid;
     border-radius: 10px;
     margin-left: 60%;
-    margin-top: 2%;
+    margin-top: 115px;
     position: fixed;
 }
+#patrocinio_link{
+    float: right;
+    width: 12%;
+    height: 15%;
+    color:  #F39C12;;
+    border: solid;
+    border-radius: 10px;
+    margin-left: 80%;
+    margin-top: 123px;
+    position: fixed;
+}
+#patrocinio_link:hover{
+    color: #808080;
+}
 .roteiros img{
-    width: 30%;
+    width: 42%;
     color: #F39C12;
     border: solid;
     border-radius: 10px;
     margin: 1%;
 }
 .roteiros img:hover{
-    color: #808080
-}
-.roteiros div{
-    margin-left: 10%;
+    color: #808080;
 }
 .roteiros h3{
-   
+    margin-top: 100px;
+    margin-left: 2%;
+    font-size: 40px;
+    margin-right: 42%;
+    text-align: center;
+    background-color: rgba(143, 141, 141, 0.726);
+    border-radius: 20px;
+    color: #FFD700;
+    font-family: 'Pathway Gothic One', sans-serif;
+    position: fixed
+}
+#primeiras_imagens{
+    margin-top: 30%;
 }
 .roteiros a{
     text-decoration: none;
     color: black;
+
 }
+
 .fundo2{
     background-image: url(../imagens/fundo_passeios.jpg);
-    background-size: cover;
+    width: 100%;
+    display: flex;
+    background-size:cover;
+    background-repeat: no-repeat ;
+    background-position: center;
     background-attachment: fixed;
-    margin-top: -19px;
 }
