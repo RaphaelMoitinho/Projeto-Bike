@@ -16,7 +16,7 @@
     -->
     
         <div class="cabecalho">
-          <img src="../imagens/bike.png">
+          <img id="bike_menu" class="biki_menu" src="../imagens/bike.png">
           <h1>Um estilo de vida!</h1>
           <div class="menu">
             <ul>
@@ -37,23 +37,23 @@
             <img id="desempenho" src="../imagens/desempenho.jpeg">
             <h3>SEPARAMOS 10 VIDEOS COM DICAS PARA A MANUTENÇÃO DA SUA BIKE.</h3>
             <div class="videos">
-                <div id="primeiros_videos">
+                <div id="div1">
                     <iframe src="https://www.youtube.com/embed/bt6QTGMcGGw?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/jU3NZq0d1XU?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
                 </div>
-                <div>
+                <div id="div2">
                     <iframe src="https://www.youtube.com/embed/7Ji1UzYxXI8?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/q4Bsb2BdTrc?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div>
+                <div id="div3">
                     <iframe src="https://www.youtube.com/embed/oytMl0vT2B8?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/hgL5Z1tvYvA?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div>
+                <div id="div4">
                     <iframe src="https://www.youtube.com/embed/4syL5UJAzoc?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/F96wANyim_M?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div>
+                <div id="div5">
                     <iframe src="https://www.youtube.com/embed/XQZ6m-OYGr0?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/inZ-uOsq5l8?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -77,3 +77,49 @@
     
 </body>
 </html>
+<script>
+  console.log(window.scrollY);
+  function ativar1(){
+    if(window.scrollY > 106){
+      div1.style.opacity = '0'; 
+      div1.style.transition = 'opacity 1s'; 
+    }
+    else
+      {
+      div1.style.opacity = '1'; 
+      div1.style.transition = 'opacity 1s'; 
+    }
+  }
+setInterval(ativar1,1);
+
+function ativar2(){
+    if(window.scrollY > 278){
+      div2.style.opacity = '0'; 
+      div2.style.transition = 'opacity 1s'; 
+    }
+    else
+      {
+      div2.style.opacity = '1'; 
+      div2.style.transition = 'opacity 1s'; 
+    }
+  }
+setInterval(ativar2,1);
+
+function ativar3(){
+    if(window.scrollY > 456){
+      div3.style.opacity = '0'; 
+      div3.style.transition = 'opacity 1s'; 
+    }
+    else
+      {
+      div3.style.opacity = '1'; 
+      div3.style.transition = 'opacity 1s'; 
+    }
+  }
+setInterval(ativar3,1);
+  function animação(){
+    bike_menu.style.marginLeft = '59px';
+    
+  }
+  setTimeout (animação, 1);
+</script>

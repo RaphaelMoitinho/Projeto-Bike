@@ -39,8 +39,11 @@
     margin-left: 42%;
     width: 64%;
 }
-#primeiros_videos{
+#div1{
     margin-top: 30%;
+}
+#div5{
+    margin-bottom: 5%;
 }
 .fundo3{
     background-image: url(../imagens/fundo_manutenção.jpg);

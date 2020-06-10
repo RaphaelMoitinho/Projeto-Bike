@@ -18,7 +18,7 @@
     -->
     
         <div class="cabecalho">
-          <img src="imagens/bike.png">
+          <img id="bike_menu" src="imagens/bike.png">
           <h1>Um estilo de vida!</h1>
           <div class="menu">
             <ul>
@@ -70,10 +70,23 @@
         Cadastro
       -->
       <div class="cadastro">
-        <h1>Receba novidades pelo whats</h1>
-        <input id="nome_cadastro" placeholder="Seu nome e sobrenome">
-        <input id="telefone_cadastro" placeholder="(xx) 9 xxxx-xxxx" type="text" />
-        <button onclick="cadastrar()">Enviar</button>
+        <h1>Receba novidades</h1>
+        <form action="">
+          <input id="nome_cadastro" placeholder="Seu nome e sobrenome">
+          <input id="telefone_cadastro" placeholder="(xx) 9 xxxx-xxxx" type="text" />
+          <input id="email_cadastro" placeholder="digite_seu@email.com.br" >
+          <input type="submit">
+          <div style="display: block;">
+            <span>Como prefere receber novidade?</span>
+            <label for="whatsapp">whatsapp:
+              <input type="radio" id="whatsapp">
+            </label>
+            <label for="email">E-mail:
+              <input type="radio" id="email">
+            </label>
+          </div>
+        </form>
+      
       </div>
       <!--
        Fim do cadastro
@@ -165,6 +178,7 @@
       <!--
       Fim do rodapé
       -->
+      
 </body>
 </html>
 <script>
@@ -182,4 +196,9 @@
     alert(`Olá ${dados_cadastrais.nome}, seja bem vindo! Iremos estar enviando novidades para o numero ${dados_cadastrais.telefone}, até já!`)
     }
   }
+  function animação(){
+    bike_menu.style.marginLeft = '59px';
+    
+  }
+  setTimeout (animação, 5000);
 </script>

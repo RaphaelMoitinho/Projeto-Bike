@@ -26,8 +26,11 @@
 #patrocinio_link:hover{
     color: #808080;
 }
+.roteiros{
+    width: 57.5%;
+}
 .roteiros img{
-    width: 42%;
+    width: 46%;
     color: #F39C12;
     border: solid;
     border-radius: 10px;
@@ -48,8 +51,22 @@
     font-family: 'Pathway Gothic One', sans-serif;
     position: fixed
 }
-#primeiras_imagens{
-    margin-top: 30%;
+#div1{
+    margin-top: 26%;
+    margin-left: 5%;
+}
+#div2{
+    margin-left: 5%;
+}
+#div3{
+    margin-left: 5%;
+}
+#div4{
+    margin-left: 5%;
+}
+#div5{
+    margin-left: 5%;
+    margin-bottom: 23%;
 }
 .roteiros a{
     text-decoration: none;

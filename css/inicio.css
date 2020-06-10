@@ -58,28 +58,25 @@
 .cadastro h1{
     float: left;
     padding: 26px;
-    margin: 0px 9%;
+    margin: 0px 5%;
     font-family: 'Sen', sans-serif;
 }
 .cadastro input{
-    padding: 5px;
+    padding: 11px;
     background-color: #F39C12;
-    border-radius: 10px;
+    border-radius: 6px;
+    margin-top: 14px;
 }
-.cadastro button{
-    padding: 5px;
-    margin-top: 33px;
-    background-color: #F39C12;
-    border-radius: 10px;
+.cadastro span{
+    margin-right: 5%;
+}
+.cadastro div label input{
+    margin-right: 9%;
 }
 .fundo_motivos{
     background-image: url(../imagens/fundo_motivos.jpg);
-    /* width: 100%; */
     display: flex;
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    /* background-position: center;*/
-    
+    background-size: cover;    
 }
 .motivos{
     background-color: rgba(143, 141, 141, 0.726);

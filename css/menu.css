@@ -5,6 +5,7 @@ body {
     border: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .cabecalho {
     background-color: #FFD700;
     width: 100%;
@@ -20,8 +21,21 @@ body {
     font-family: 'Sen', sans-serif;
 }
 .cabecalho img{
-    margin-left: 59px;
+    margin-left: -679px;
     width: 8%;
+    animation-name: entrada_menu; 
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+} 
+@keyframes entrada_menu{
+    0%{
+        margin-left: -679px;
+    }
+    100%{
+        margin-left: 59px;
+    }
 }
 .menu{
     margin-top: 14px;
