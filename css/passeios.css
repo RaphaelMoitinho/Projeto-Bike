@@ -12,7 +12,7 @@
     margin-top: 115px;
     position: fixed;
 }
-#patrocinio_link{
+#patrocinio_url{
     float: right;
     width: 12%;
     height: 15%;
@@ -23,7 +23,7 @@
     margin-top: 123px;
     position: fixed;
 }
-#patrocinio_link:hover{
+#patrocinio_url:hover{
     color: #808080;
 }
 .roteiros{
@@ -52,7 +52,7 @@
     position: fixed
 }
 #div1{
-    margin-top: 26%;
+    margin-top: 28%;
     margin-left: 5%;
 }
 #div2{
@@ -66,12 +66,31 @@
 }
 #div5{
     margin-left: 5%;
-    margin-bottom: 23%;
 }
 .roteiros a{
     text-decoration: none;
     color: black;
 
+}
+#doador{
+    width: 95%;
+    height: 121px;
+    margin-left: 1.5%;
+    color: black;
+}
+#doador_url{
+    float: left;
+    width: 54%;
+    height: 74px;
+    color: #F39C12;
+    border: solid;
+    border-radius: 6px;
+    margin-left: 2.5%;
+    margin-top: -96px;
+    position: relative;
+}
+#doador_url:hover{
+    color: #808080;
 }
 
 .fundo2{
