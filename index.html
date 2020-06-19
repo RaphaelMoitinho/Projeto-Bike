@@ -19,7 +19,7 @@
     
         <div class="cabecalho">
           <img id="bike_menu" src="imagens/bike.png">
-          <h1>Um estilo de vida!</h1>
+          <h1>UM ESTILO DE VIDA!</h1>
           <div class="menu">
             <ul>
               <li><a id="inicio" href="index.html">INICIO</a></li>
@@ -71,13 +71,23 @@
       -->
       <div class="cadastro">
         <h1>Receba novidades</h1>
-        <form action="">
-          <input id="nome_cadastro" placeholder="Seu nome e sobrenome">
-          <input id="telefone_cadastro" placeholder="(xx) 9 xxxx-xxxx" type="text" />
-          <input id="email_cadastro" placeholder="digite_seu@email.com.br" >
-          <input type="submit">
+        <form onsubmit="cadastrar()">
+
+          <input id="nome_cadastro" placeholder="Seu nome e sobrenome">          
+          <input id="telefone_cadastro" placeholder="00 90000-0000" type="text"/>
+          <input id="email_cadastro" placeholder="usuario@dominio.com" >
+          <button type="button" onclick="validar()">Enviar</button>
+          <div class="teste">
+              <span id="errado" style="display: none;">
+                <img class="img_validacao" src="imagens/errado.png">
+              </span>
+              <span id="certo" style="display: none;">
+                <img class="img_validacao" src="imagens/certo.png">
+              </span>
+          </div>
+
           <div id="preferencia">
-            <span>Como prefere receber novidade?</span>
+            <span>Como prefere receber novidade?</span> 
             <label for="whatsapp">whatsapp:
               <input type="checkbox" checked id="whatsapp">
             </label>
@@ -160,7 +170,7 @@
           Ao pedalar, seu corpo precisa de mais oxigênio para alimentá-lo, então seu coração vai bater mais 
           e o seu sangue vai correr mais rápido pelas veias. Todo o seu corpo será abastecido com muito 
           sangue e oxigênio, fazendo com que sua saúde e desempenho só melhorem!
-
+          fonte: <a href="https://blog.bikeregistrada.com.br/vem-pedalar-10-beneficios-de-andar-de-bike-para-a-saude/">Bike Registrada</a>
         </div>
       </div>
       
@@ -177,28 +187,52 @@
   
       <!--
       Fim do rodapé
+      alert(`Olá ${dados_cadastrais.nome}, seja bem vindo! Iremos estar enviando novidades para o numero ${dados_cadastrais.telefone}, até já!`)
       -->
       
 </body>
 </html>
 <script>
-  function cadastrar(){
+  function validar(){
     let dados_cadastrais = {
       nome: nome_cadastro.value,
-      telefone: telefone_cadastro.value
+      telefone: telefone_cadastro.value,
+      email: email_cadastro.value
     };
-    if (dados_cadastrais.nome == ''){
-      alert('Preencha os campos corretamante')
-    }else 
-    if(dados_cadastrais.telefone == ''){
-      alert('Preencha os campos corretamante')
-    }else {
-    alert(`Olá ${dados_cadastrais.nome}, seja bem vindo! Iremos estar enviando novidades para o numero ${dados_cadastrais.telefone}, até já!`)
+    
+    if ((dados_cadastrais.nome || dados_cadastrais.telefone || dados_cadastrais.email)){
+      errado.style.display = 'none';
+      certo.style.display= 'none';
+      let erros = 0;  
+      if (dados_cadastrais.nome.search(' ') == -1){
+        alert ('Preencha o Nome e Sobrenome corretamente');
+        erros++;
+      }
+      
+      if((dados_cadastrais.telefone.search('-') == -1)||
+          dados_cadastrais.telefone [dados_cadastrais.telefone-5] == '-'){
+        alert ('Preencha o Telefone corretamente "0090000-0000"');
+        erros++;
+      }
+
+      if((dados_cadastrais.email.search('@') == -1)||
+        (dados_cadastrais.email.search('.') == -1)||
+        (dados_cadastrais.email.search('') == -1) ){
+        alert ('Preencha o E-mail corretamente "usuario@dominio.com"');
+        erros++;
+      }
+      erros > 0 ? errado.style.display = 'block': certo.style.display = 'block';
+      
+    }else{
+      alert ('Prencha os campos!');
+      errado.style.display = 'block';
     }
-  }
+}
+
   function animação(){
     bike_menu.style.marginLeft = '59px';
     
   }
-  setTimeout (animação, 5000);
+  setTimeout (animação, 3000);
+  
 </script>

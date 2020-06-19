@@ -13,8 +13,9 @@
     width: 100%;
     margin-top: 5%;
 }
-.passeios_apresentacao{
-    align-items: center;
+.passeios_apresentacao {
+    text-align: center;
+    padding: 0;
 }
 .passeios_apresentacao img{
     width: 300px;
@@ -66,7 +67,20 @@
     background-color: #F39C12;
     border-radius: 6px;
     margin-top: 26px;
-    margin-right: 3%;
+}
+.cadastro button{
+    padding: 11px;
+    background-color: #F39C12;
+    border-radius: 6px;
+    margin-top: 26px;
+    margin-left: 10px;
+}
+.teste{
+    float: right;
+    display: flex;
+    margin-right: 160px;
+    justify-content: center;
+    margin-top: 36px
 }
 .cadastro span{
     margin-right: 8%;
@@ -74,6 +88,12 @@
 .cadastro div label input{
     margin-right: 12%;
 }
+.img_validacao{
+    width: 25px;
+    /* right: 14%;
+    top: 213%;
+    position: absolute;
+ */}
 #preferencia{
     color: #FFD700;
 }
